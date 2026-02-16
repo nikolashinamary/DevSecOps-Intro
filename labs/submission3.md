@@ -31,14 +31,12 @@ true
 
 Existing signed commit in repository history:
 
-- Commit: `9684b3c6625e32f3c63bb11e6f42f322bdb2ab89`
+- Commit: [`fce3d2a75b50f6dc97a410a9f368d6623133ff87`](https://github.com/nikolashinamary/DevSecOps-Intro/commit/fce3d2a75b50f6dc97a410a9f368d6623133ff87)
 - Evidence from commit object:
 
-```text
-gpgsig -----BEGIN SSH SIGNATURE-----
-```
+![Verified signed commit](screenshots/signed.png)
 
-GitHub verification evidence should be attached in screenshot placeholders below.
+GitHub verification evidence and local terminal authentication evidence are attached in the screenshots section below.
 
 ### 1.4 Analysis: why commit signing is critical in DevSecOps workflows
 
@@ -82,7 +80,7 @@ Current local hook sanity check output (no staged files):
 [pre-commit] no staged files; skipping scans
 ```
 
-Screenshots for blocked and successful test paths are listed in placeholders below.
+Screenshots for blocked and successful test paths are attached in the screenshots section below.
 
 ### 2.3 Analysis: how automated secret scanning prevents incidents
 
@@ -91,18 +89,26 @@ Screenshots for blocked and successful test paths are listed in placeholders bel
 - It standardizes security checks for all contributors through an enforceable local gate.
 - Combined TruffleHog and Gitleaks coverage improves detection depth and lowers false negatives.
 
-## Screenshot Placeholders
 
-Add screenshots at these paths and keep links in this report:
 
-1. `labs/screenshots/lab3-task1-verified-badge.png` - GitHub "Verified" badge for signed commit.
-2. `labs/screenshots/lab3-task1-signing-config.png` - Terminal output showing signing config values.
-3. `labs/screenshots/lab3-task2-hook-file-and-permissions.png` - `.git/hooks/pre-commit` content/permissions.
-4. `labs/screenshots/lab3-task2-blocked-secret-test.png` - Commit blocked when fake secret is staged.
-5. `labs/screenshots/lab3-task2-success-after-fix.png` - Commit succeeds after secret removal/redaction.
+## Attached screenshots
 
-Optional inline placeholders:
+### Task 1 screenshots
 
-![Task 1 Verified Badge Placeholder](https://github.com/nikolashinamary/DevSecOps-Intro/pull/3/changes/fce3d2a75b50f6dc97a410a9f368d6623133ff87#:~:text=7%20minutes%20ago-,Verified,-commit)
-![Task 2 Blocked Secret Test Placeholder](screenshots/lab3-task2-blocked-secret-test.png)
-![Task 2 Successful Commit Placeholder](screenshots/lab3-task2-success-after-fix.png)
+- `signed.png` - verified signed commit evidence.
+
+![Verified signed commit](screenshots/signed.png)
+
+- `auth.png` - terminal evidence showing authenticated local setup.
+
+![Authenticated terminal session](screenshots/auth.png)
+
+### Task 2 screenshots
+
+- `blocked.png` - commit blocked when staged file contains secrets.
+
+![Blocked commit with secrets](screenshots/blocked.png)
+
+- `success.png` - successful commit path after removing/redacting secrets.
+
+![Successful commit without secrets](screenshots/success.png)
