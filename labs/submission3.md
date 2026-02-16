@@ -103,6 +103,6 @@ Add screenshots at these paths and keep links in this report:
 
 Optional inline placeholders:
 
-![Task 1 Verified Badge Placeholder](screenshots/lab3-task1-verified-badge.png)
+![Task 1 Verified Badge Placeholder](https://github.com/nikolashinamary/DevSecOps-Intro/pull/3/changes/fce3d2a75b50f6dc97a410a9f368d6623133ff87#:~:text=7%20minutes%20ago-,Verified,-commit)
 ![Task 2 Blocked Secret Test Placeholder](screenshots/lab3-task2-blocked-secret-test.png)
 ![Task 2 Successful Commit Placeholder](screenshots/lab3-task2-success-after-fix.png)
